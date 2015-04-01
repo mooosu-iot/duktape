@@ -155,6 +155,8 @@ for i in \
 	duk_hthread.h		\
 	duk_hthread_misc.c	\
 	duk_hthread_stacks.c	\
+	duk_hbufferobject.h	\
+	duk_hbufferobject_misc.c	\
 	duk_debugger.c		\
 	duk_debugger.h		\
 	duk_internal.h		\
