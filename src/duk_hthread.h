@@ -152,6 +152,9 @@
 		DUK_ASSERT(DUK_HOBJECT_IS_THREAD((duk_hobject *) (ctx))); \
 		DUK_ASSERT(((duk_hthread *) (ctx))->unused1 == 0); \
 		DUK_ASSERT(((duk_hthread *) (ctx))->unused2 == 0); \
+		DUK_ASSERT(((duk_hthread *) (ctx))->valstack_end >= ((duk_hthread *) (ctx))->valstack); \
+		DUK_ASSERT(((duk_hthread *) (ctx))->valstack_top >= ((duk_hthread *) (ctx))->valstack); \
+		DUK_ASSERT(((duk_hthread *) (ctx))->valstack_top >= ((duk_hthread *) (ctx))->valstack_bottom); \
 	} while (0)
 
 /*
